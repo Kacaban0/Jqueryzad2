@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#p").hide(1000);
+  });
+  $("#show").click(function(){
+    $("#p").show(2000);
+  });
+});
+$(document).ready(function(){
+  $("#toggle").click(function(){
+    $("#cos").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#button3").click(function(){
+    $("#div1").fadeTo("slow", 0.15);
+    $("#div2").fadeTo("slow", 0.4);
+    $("#div3").fadeTo("slow", 0.7);
+  });
+});
+        $(document).ready(function(){
+          $("#button2").click(function(){
+            $("#div4").fadeOut("slow");
+            $("#div5").fadeOut("slow");
+            $("#div6").fadeOut("slow");
+            $("#button1").fadeIn();
+            $("#button2").fadeOut();
+          });
+        });
+        $(document).ready(function(){
+    $("#button1").click(function(){
+    $("#div4").fadeIn("slow");
+    $("#div5").fadeIn("slow");
+    $("#div6").fadeIn("slow");
+    $("#button2").fadeIn();
+    $("#button1").fadeOut();
+
+  });
+});
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+}); 
+</script>
+<style> 
+            #panel, #flip {
+              padding: 5px;
+              text-align: center;
+              background-color: #e5eecc;
+              border: solid 1px #c3c3c3;
+            }
+            
+            #panel {
+              padding: 50px;
+              display: none;
+            }
+            
+            </style>    
+</head>
+<body>
+
+<p id="p">Kliknij chowaj i znikne</p>
+
+<button id="hide">chowaj</button>
+<button id="show">pokazzzz</button><br>
+
+<button id="toggle">kliknij to i on zniknie albo pojawi</button>
+<p id="cos">W sensie ja</p><br>
+<button id="button3">Click to fade boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div><br>
+ <button id="button1">Zobacz kolory</button><br><br>
+<button id="button2" style="display: none;">Schowaj kolory</button><br><br>
+
+<div id="div4" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div5" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div6" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>    
+<div id="flip">Kliknij to zejde albo wejde</div>
+<div id="panel">Hazard jest zly ale kodowanie jest dobre       !!!</div>
+</body>
+</html>
